@@ -29,25 +29,21 @@ Java – Standalone and Android applications
 Here are a few notable projects in this repository:
 
 HTML and CSS (https://github.com/practical-tutorials/project-based-learning?tab=readme-ov-file#html-and-css)
-
 -build a loading screen 
 -build a html calculator with js
 -build snake using only javascript, html, css
 
 Javascript (https://github.com/practical-tutorials/project-based-learning?tab=readme-ov-file#javascript)
-
 -build a tictactoe game with javascript
 -build a simple weather app with vanilla javascript
 -build a todo list app in javascript
 -build a discord bot 
 
 PHP (https://github.com/practical-tutorials/project-based-learning?tab=readme-ov-file#php)
-
 -how to make ur own blog
 -build realtime chat app
 
 Java (https://github.com/practical-tutorials/project-based-learning?tab=readme-ov-file#java)
-
 -build a simple http server with java
 -build an android flashlight app
 
@@ -59,7 +55,6 @@ Java (https://github.com/practical-tutorials/project-based-learning?tab=readme-o
 -Build cross-platform applications combining multiple technologies.
 
 👨‍💻 Author
-
 https://github.com/muaazl
 
 GitHub
