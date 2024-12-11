@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>recipe finder</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Recipe Finder</h1>
+        <div class="search-container">
+            <i class="fas fa-search"></i>
+            <input type="text" id="searchInput" placeholder="Search for recipes...">
+            <button id="searchBtn">Search</button>
+        </div>
+        <div class="recipe-container" id="recipeContainer"></div>
+    </div>
+    <div class="modal" id="recipeModal">
+        <div class="modal-content">
+            <span class="close" id="closeBtn">X</span>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
