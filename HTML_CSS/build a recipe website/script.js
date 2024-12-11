@@ -1,7 +1,7 @@
 const apiUrl = 'https://www.themealdb.com/api/json/v1/1/search.php?s=';
 
 function defaultFn() {
-    const defaultFood = 'chicken';
+    const defaultFood = 'Fish';
     searchFn(defaultFood);
 }
 
