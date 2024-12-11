@@ -6,23 +6,25 @@ $(document).ready(function () {
 })
 
 async function weatherFn(cName) {
-    const apiURL = `${url}?q=${cName}&appid=${apiKey}&units=metric`
+    const apiURL = `${url}?q=${cName}&appid=${apiKey}&units=metric`;
     try {
-        const res = await fetch(apiURL)
-        const data = await res.json()
+        const res = await fetch(apiURL);
+        const data = await res.json();
+        console.log(data);  // Log the response to verify
+
         if (res.ok) {
-            weatherShowFn(data)
+            weatherShowFn(data);
+            showCityTime(data);
         } else {
-            alert("City not found. Please try again.")
+            alert("City not found. Please try again.");
         }
     } catch (error) {
-        console.error("Error fetching weather data:", error)
+        console.error("Error fetching weather data:", error);
     }
 }
 
 function weatherShowFn(data) {
     $('#city-name').text(data.name);
-    $('#date').text(moment().format('MMMM Do YYYY, h:mm:ss a'));
     $('#temperature').html(`${data.main.temp}°C`);
     $('#description').text(data.weather[0].description);
     $('#wind-speed').html(`Wind Speed: ${data.wind.speed} m/s`);
@@ -30,7 +32,13 @@ function weatherShowFn(data) {
     $('#weather-info').fadeIn();
 }
 
+function showCityTime(data) {
+    const timezoneOffset = data.timezone; // Timezone offset in seconds
+    const localTime = moment().utcOffset(timezoneOffset / 60); // Convert the timezone offset to minutes
+    $('#date').text(localTime.format('MMMM Do YYYY, h:mm:ss a')); // Format the time
+}
+
 $('#city-input-btn').click(function () {
-    const city = $('#city-input').val()
-    if (city) weatherFn(city)
-})
+    const city = $('#city-input').val();
+    if (city) weatherFn(city);
+});
