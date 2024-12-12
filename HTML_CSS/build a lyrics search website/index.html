@@ -1,0 +1,28 @@
+<html>
+<head>
+<title></title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+    <divc class="container">
+        <div class="header">
+            <h1 class="animate__animated animate__fadeInDown" style="color: #3498db;">Lyrics Search</h1>
+        </div>
+
+        <div class="search-container">
+            <i class="fas fa-music"></i>
+            <input type="text" id="searchInput" placeholder="Search for lyrics or artist...">
+            <button id="searchBtn">Search</button>
+            <button id="clearBtn">Clear</button>
+        </div>
+        <div class="result-container" id="results"></div>
+
+        <div class="loading-container" id="loadingContainer" style="display: none;">
+            <div class="loading-spinner"></div>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
