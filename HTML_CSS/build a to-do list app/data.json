@@ -1,0 +1,12 @@
+[
+    {
+        "id": 1,
+        "text": "Learn JavaScript",
+        "completed": false
+    },
+    {
+        "id": 2,
+        "text": "Build a to-do list",
+        "completed": true
+    }
+]
