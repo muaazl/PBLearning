@@ -1,0 +1,175 @@
+/* General Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #e4e4e4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Main Container */
+#main {
+    width: 100%;
+    min-height: 100vh;
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Button to Add New Notes */
+#addBtn {
+    position: fixed;
+    left: 18px;
+    top: 10px;
+    background-color: #2d3436;
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+#addBtn:hover {
+    background-color: #1e272e;
+}
+
+/* Header Section */
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 12px;
+}
+
+/* Note Cards */
+.note {
+    width: 380px;
+    height: 260px;
+    background-color: #ffffff;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: transform 0.2s;
+    animation: popUp 0.5s ease-in-out;
+}
+
+.note:hover {
+    transform: scale(1.05);
+}
+
+/* Icons Section (Save & Trash) */
+.icons {
+    background-color: #0d7390;
+    color: white;
+    padding: 5px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Save and Trash Icons */
+.icons i {
+    padding: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.icons i:hover {
+    transform: scale(1.2);
+}
+
+/* Title Textarea */
+.title {
+    border: none;
+    width: 100%;
+    height: 80%;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #f0f4f8;
+    resize: none;
+    border-radius: 0 0 10px 10px;
+}
+
+/* Content Textarea */
+.content {
+    border: none;
+    width: 100%;
+    height: 87%;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #f8f9fa;
+    resize: none;
+    border-radius: 0 0 10px 10px;
+}
+
+/* Header Text */
+.heading {
+    padding: 20px;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+    font-size: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Textarea Focus Effect */
+.note textarea:focus {
+    border: none;
+    outline: none;
+    background-color: #e8f7fa;
+}
+
+/* Smooth Animation for Adding Notes */
+@keyframes popUp {
+    0% {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .note {
+        width: 90%;
+    }
+
+    #addBtn {
+        top: 5px;
+        font-size: 16px;
+        padding: 10px;
+    }
+}
