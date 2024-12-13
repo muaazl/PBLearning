@@ -1,0 +1,117 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+h3 {
+    font-size: 1.7rem;
+    color: #333;
+}
+
+.birthday-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.name-input,
+.date-input {
+    width: 45%;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.date-input {
+    width: 35%;
+}
+
+.add-btn {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.add-btn:hover {
+    background-color: #fff;
+    border: 2px solid green;
+    color: green;
+}
+
+.material-symbols-outlined {
+    font-size: 1.5rem;
+}
+
+.empty-state {
+    margin-top: 20px;
+}
+
+.empty-state span {
+    display: block;
+    margin-bottom: 10px;
+    color: #666;
+    font-size: 1rem;
+}
+
+.birthday-cake {
+    font-size: 3rem;
+    color: green;
+}
+
+.birthday-list {
+    margin-top: 20px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.birthday-list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.birthday-list-item:last-child {
+    border-bottom: none;
+}
+
+.birthday-list-item span {
+    font-size: 1rem;
+}
+
+.delete-btn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b;
+}

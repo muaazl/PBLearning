@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>birthday reminder</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <div class="container">
+        <h3>Birthday Reminder App</h3>
+        <div class="birthday-input">
+            <input type="text" class="name-input" placeholder="Name">
+            <input type="date" class="date-input">
+            <button onclick="addReminder()" class="add=btn">
+                <span class="material-symbols-outlined">add</span>
+            </button>
+        </div>
+
+        <div class="empty-state">
+            <span>You don't have any birthday reminders, create one!</span>
+            <div class="birthday-cake">
+                <span class="material-symbols-outlined">cake</span>
+            </div>
+            <ul class="birthday-list"></ul>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
