@@ -1,0 +1,148 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background: rgb(212, 212, 212);
+    color: #333;
+}
+
+.container {
+    text-align: center;
+    background-color: rgb(247, 241, 241);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 36px;
+    color: rgb(95, 90, 90);
+}
+
+p {
+    font-size: 30px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.option {
+    margin: 0 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: rgb(241, 241, 18);
+    color: black;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.option:hover {
+    background-color: rgb(248, 248, 42);
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 25px;
+    cursor: pointer;
+    background-color: #f39c12;
+    color: #fff;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #d35400;
+}
+
+.score {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 24px;
+    color: #27ae60;
+}
+
+#timer {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #333;
+    background-color: #bdc3c7;
+    padding: 10px 5px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#highScore {
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    color: green;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 24px;
+    color: red;
+
+}
+
+.incorrect {
+    color: red;
+}
+
+.correct {
+    color: green;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 24px;
+    }
+
+    .option {
+        font-size: 18px;
+        padding: 5px 12px;
+    }
+
+    button {
+        font-size: 18px;
+        padding: 8px 20px;
+    }
+
+    .score {
+        font-size: 20px;
+    }
+
+    #timer {
+        font-size: 18px;
+    }
+
+    #highScore {
+        font-size: 20px;
+    }
+
+    #result {
+        font-size: 20px;
+    }
+}
