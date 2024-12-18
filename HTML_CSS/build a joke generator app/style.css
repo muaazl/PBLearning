@@ -1,0 +1,97 @@
+/* General Reset */
+body, h1, p, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #f0f4f8, #e8ebed);
+    color: #333;
+}
+
+/* Main Container */
+.container {
+    width: 90%;
+    max-width: 500px;
+    padding: 30px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    overflow: hidden;
+    text-align: center;
+}
+
+/* Joke Container */
+.joke-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.laugh-icon,
+.random-icon,
+.copy-icon {
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+/* Title */
+.app-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+/* Joke Text */
+#jokeText {
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding: 15px 20px;
+    background: #f7f9fc;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
+}
+
+/* Buttons */
+
+.joke-container button {
+    padding: 15px 25px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #fff;
+    background: #518bb3;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:not(:disabled):hover {
+    background: #355b75;
+}
+
+/* Button Icons (Optional) */
+.random-icon, .copy-icon {
+    font-weight: bold;
+}
+
+/* Subtle Transitions */
+button {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:active {
+    transform: translateY(2px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
