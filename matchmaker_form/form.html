@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matchmaker Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Enter Your Names and Ages</h1>
+    <form action="matchMaker.php" method="post" autocomplete="off">
+        <label for="user_name">Your Name:</label><br>
+        <input type="text" id="user_name" name="user_name" required><br><br>
+
+          <label for="age1">Your Age:</label><br>
+        <input type="number" id="age1" name="age1" required><br><br>
+
+        <label for="partner_name">Partner's Name:</label><br>
+        <input type="text" id="partner_name" name="partner_name" required><br><br>
+
+          <label for="age2">Partner's Age:</label><br>
+        <input type="number" id="age2" name="age2" required><br><br>
+
+        <input type="submit" value="Calculate Match">
+    </form>
+</body>
+</html>
