@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:,">  <!-- Suppress favicon error -->
+</head>
+
+<body>
+
+    <header>
+        <h1>My Projects</h1>
+        <div class="controls">
+            <input type="text" id="search-input" placeholder="Search projects...">
+            <div class="filters">
+                <button class="filter-btn" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="javascript">JavaScript</button>
+                <button class="filter-btn" data-filter="python">Python</button>
+                <button class="filter-btn" data-filter="php">PHP</button>
+            </div>
+            <button id="dark-mode-toggle">Dark Mode</button>
+        </div>
+    </header>
+
+    <main id="projects-container">
+        <!-- Project cards will be dynamically added here -->
+    </main>
+
+    <footer>
+        <p>© 2024 - 2025 Your Name</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

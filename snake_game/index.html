@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>snake game</title>
+<style>
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: #2a5298;
+        font-family: 'Arial', sans-serif;
+        color: white;
+        height: 100vh;
+        margin: 0;
+    }
+    #gameCanvas {
+        background-color: #fff;
+        border: 5px solid #444;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    }
+    #playAgain {
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    #score {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+        padding: 10px 20px;
+        background: rgba(255, 255, 255, 0.1);
+        border: 2px solid #fff;
+        border-radius: 5px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        text-align: center;
+    }
+    #score {
+        font-weight: bold;
+        font-size: 2rem;
+    }
+</style>
+</head>
+<body>
+    <span id="score">0</span>
+    <canvas id="gameCanvas" width="300" height="300"></canvas>
+    <button id="playAgain" onclick="resetGame()"> Play Again </button>
+    <script src="script.js"></script>
+</body>
+</html>
